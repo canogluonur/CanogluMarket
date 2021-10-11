@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <title>İletişim</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-default" >
+  <div class="navbar-header">
+    <a class="navbar-brand" href="/">  <img height="60" src="/static/canoğlu.png"/> </a>
+  </div>
+  <ul class="nav navbar-nav">
+    <li><a href="/">Ana sayfa</a></li>
+    <li><a href="iletisim">İletişim</a></li>
+  </ul>
+  <ul class="nav navbar-nav navbar-right">
+    <li> <a href="https://www.instagram.com/onurcaanoglu/">  <img height="40" src="/static/insta.jpg"   /> </a>
+</nav>
+
+
+<div class="container">
+  <h2 align="center" >CANOĞLU MARKET</h2>
+  <p align="center" style="color:#0404ee;"> KONUM:Armağanevler mahl. Ortanca sokak No:44-46 Ümraniye/İstanbul</p>
+    <div class="navbar-header">
+    <a class="navbar-brand" href="https://www.google.com/maps/@41.0182387,29.1237768,14z">  <img width="1000" src="/static/konum.png"/> </a>
+    </div>
+</div>
+
+
+
+<form action="/mesajkaydet" method="post">
+        <p>
+          <label for="adsoyad">Adınız Soyadınız:</label><br>
+          <input type="text" id="adsoyad" name="adsoyad">
+        </p>
+        <p>
+          <label for="eposta">E-posta:</label><br>
+          <input type="text" id="eposta" name="eposta">
+        </p>
+        <p>
+          <label for="mesaj">Mesajınız:</label><br>
+            <textarea id="mesaj" name="mesaj" rows="10" cols="30">
+            </textarea>
+        </p>
+
+        <input style="color:blue" type="submit" value="Gönder">
+
+    </form>
+
+
+</body>
+</html>
